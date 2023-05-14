@@ -21,7 +21,7 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-         aws-region: us-east-2
+         aws-region: us-east-1
          role-to-assume: arn:aws:iam::557439662450:role/tfm-gh-action
 
     - run: aws sts get-caller-identity 
